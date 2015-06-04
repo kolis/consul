@@ -5,7 +5,7 @@ resource "aws_instance" "server" {
     count = "${var.servers}"
     /*security_groups = ["${aws_security_group.consul.name}"]*/
 
-    vpc_security_group_ids = ["${aws_security_group.consul.name}"]
+    vpc_security_group_ids = ["${aws_security_group.consul.id}"]
     subnet_id = "${var.subnet_id}"
 
     connection {
