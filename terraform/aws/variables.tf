@@ -32,3 +32,9 @@ variable "tagName" {
     default = "consul"
     description = "Name tag for the servers"
 }
+variable "vpc_id" {
+  default = ""
+}
+variable "subnet_id" {
+  default = ""
+}
